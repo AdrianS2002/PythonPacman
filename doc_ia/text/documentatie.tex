@@ -1,0 +1,63 @@
+\section{Tutorial}  % titlu principal
+
+\subsection{Subtitlu 1}  % subtitlu
+\lipsum[1-2] % doar pentru exemplu, adauga textul ala in latina
+
+\subsubsection{Subsubtitlu} % subtitlu la subtitlu
+\par Born into the noble Crownguard family, along with his younger sister Lux, Garen knew from an early age that he would be expected to defend the throne of Demacia with his life. His father, Pieter, was a decorated military officer, while his aunt Tianna was Sword-Captain of the elite Dauntless Vanguard—and both were recognized and greatly respected by King Jarvan III. It was assumed that Garen would eventually come to serve the king’s son in the same manner.
+
+\subsection{Tutorial elemente de baza}
+\par O propozitie normala. Daca vrem sa adaugam text in \textbf{bold}, \textit{italic} sau \textbf{\textit{bold italic}}. \\ % cele doua backslash-uri sunt pentru a trece la un rand nou
+Astfel se poate utiliza o \textbf{lista numerotata}:
+
+% lista numerotata
+\begin{enumerate}
+    \item primul element
+    \item al doilea element
+    \item al treilea element
+\end{enumerate}
+Astfel se poate utiliza o \textbf{lista neumerotata}:
+
+% lista neumerotata
+\begin{itemize}
+    \item primul element
+    \item al doilea element
+    \item al treilea element
+\end{itemize}
+
+\par Asa se adauga o \textbf{imagine}.
+\begin{figure}[H]
+    \centering  % centrare imagine
+    \includegraphics[scale=0.35]{resources/see_image.jpg}  % scale este factorul de scalare al imaginii originale
+    \caption{Baba Voss}  % titlu imagine
+    \label{fig:figura1} % label pentru referire
+\end{figure}
+% fig:figura1 este numele label-ului. Se putea folosi pur si simplu si "gigel", insa este o conventie ca label-urile
+% figurilor sa fie de forma "fig:nume_figura"
+Daca vrem sa referim imaginea \ref{fig:figura1} in text se procedeaza astfel.
+
+\par Asa se adauga \textbf{cod}:
+\inputminted[linenos]{python}{code/fibo.py}
+
+
+\section{Uninformed search}
+\subsection{Question 1 - Depth-first search}
+% definire cerinta
+% prezentare algoritm/metoda
+% optional prezentare cod
+% optional explicatii suplimentare cod
+% comentarii/observatii asupra performantei/rezultatelor/complexitatii/algoritmului
+
+\subsection{Question 2 - Breadth-first search}
+% TODO: de completat
+% + q3 din project 1
+
+\section{Informed search}
+% q4 - q8 din project 1
+\subsection{Question 4 - A* search  algorithm}
+% q4 din project 1
+
+\section{Adversarial search}
+% q1-q3 din project2
+\subsection{Question 9 - Improve the ReflexAgent} 
+% q1 din project 2
